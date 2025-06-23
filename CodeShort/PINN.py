@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from adaptive import node_moving_1d
+from CodeShort.adaptive import node_moving_1d
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
