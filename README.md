@@ -6,7 +6,7 @@ Physics-Informed Neural Networks (PINNs) offer a mesh-free approach to solving p
 #### Method
 Our adaptive sampling method is based on a physical analogy. All the (points) nodes in our domain are connected by springs. The stiffness of each spring is proportional to the average error of the nodes it connects. Where the residual is large, the spring is “stiffer” and pulls its endpoints closer together; where the residual is small, the spring is soft and allows the points to spread apart.  In effect, the network of springs searches for an equilibrium configuration in which the spacing of nodes is inversely proportional to the residual error. This method can be found in the `PINN_adaptive.ipynb` file under 'adaptive node moving function'. See `node_moving.png` in this directory to see an illustration of how this method works.
 
-![Adaptive Node Moving](node_moving.jpg?raw=true "Node Moving")
+![Adaptive Node Moving](node_moving.png?raw=true "Node Moving")
 
 
 
